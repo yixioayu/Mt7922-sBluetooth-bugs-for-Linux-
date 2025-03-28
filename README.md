@@ -11,3 +11,13 @@ and soure dome will be installed to /usr/src
 cd /usr/src
 tar -of linux-6.8.tar.xz #After decompression, a file will be generated.
 cd linux-6.8
+
+save https://lkml. org/lkml/2024/3/15/325 and rename to bluetooth.patch
+The specific operation of this step is wget -0 bluetooth.patch "https://lkml. org/lkml/2024/3/15/325"
+
+sudo patch-p1 </path/to/bluetooth.patch  #Apply the patch to the source code that has been decompressed.
+grep-A5 "13d3.*3585" drivers/bluetooth/busb.c #check it 
+
+
+
+
